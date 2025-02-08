@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/adrianBrands/tailwind/issues"
   },
-  "homepage": "https://github.com/adrianBrands/tailwind#readme"
+  "homepage": "https://github.com/adrianBrands/tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.0.4"
+  }
 }
