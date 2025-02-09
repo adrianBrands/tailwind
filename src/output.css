@@ -520,7 +520,19 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -546,4 +558,8 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
